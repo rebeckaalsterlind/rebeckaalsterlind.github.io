@@ -1,0 +1,8 @@
+@import "_normalize";  
+@import "_index";        /*all styling for index page apart from colours (_colours)*/
+@import "_base";         /*all styling (exl. index and colours) based on mobile device*/
+@import "_media_min414"; /*grid-background img change for screen min 414px*/
+@import "_media_min768"; /*neccesseary changes for desktop (min 768px) mode and horisontal*/
+@import "media_min1510"; /*main content max-width for wider screens (min 1510px)*/
+@import "_colours";      /*all styling concerning colours*/
+@import "_typography";   /* all typography styling exl. typography within pseudo-selectors*/

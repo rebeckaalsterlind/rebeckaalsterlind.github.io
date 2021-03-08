@@ -1,0 +1,240 @@
+* {
+	box-sizing: border-box;
+} 
+
+body {
+	font-family: 'Barlow', sans-serif;
+	margin: 0;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+/*::::::::::: HEADER/MENU :::::::::::*/
+header {
+	position: fixed;
+  height: 80px;
+  width: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	box-shadow: 0 7px 10px black;
+	z-index: 20;
+	.mobile-only {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 200px;
+    z-index: 2;
+    &:hover, &:focus {
+      height: 81px;
+    }	
+    &:active {
+     opacity: .3;
+    }
+    .mobile-only__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+			height: 100%;
+			max-width: 70vw;
+      padding: 5px;
+    }
+	}
+	.menu {
+    display: inline-block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 80px;
+    width: 100%;
+		.menu__btn {
+			padding: 16px;
+			border: none;
+			&:hover, &:focus {
+				font-size: 1.2em;
+			}
+			&:active {
+				opacity: .3;
+			}
+		}
+		.menu__content {
+			display: none;
+			position: absolute;
+			height: 100vh;
+			width: 100%; 
+			overflow: auto;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.desktop-only {
+    display: none;
+    .desktop-only__frame {
+      display: block;
+    }
+	}
+}
+
+
+.menu__content__list__link {
+	display: block;
+	margin: 10% 0;
+	padding: 20px 0;
+	&:hover, &:focus {
+		font-weight: 800;
+	}
+}
+
+
+.show {display: block;}
+
+
+/* ::::::::::: FLEXBOX STRUCTURE ::::::::::: */
+.flexbox {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+  margin-top: 10%;
+	.flexbox__flexitem {
+		position: relative;
+		text-align: right;
+	  width: 80vw;
+		margin: 40% 0;
+		border: 1px solid black;
+		border-right: none;
+		border-bottom: none;
+		box-shadow: 17px 17px 35px black;
+		h1 {
+			position: absolute;
+			right: 20px;
+			top: -65px;
+		}
+		p {
+			max-width: 800px;
+			margin: 20px 20px 30px auto;
+			padding-left: 5%;
+		}
+	} 
+}
+
+
+/*::::::::::: GRID STRUCTURE :::::::::::*/
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+	grid-gap: 7px;
+	width: 100%;
+	padding: 20px;
+	.grid__bg {
+		display: flex;
+		justify-content: center; 
+		align-items: center;
+		background-size: cover;
+		background-attachment: fixed;
+		min-height: 200px;
+		div {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			h3 {
+				margin: 20px;
+			}
+		}	
+	}
+}
+
+
+/* ::::::::::: SPECIFICS FOR SECTIONS ::::::::::: */
+
+/* ........... SPECIFICS FOR EDUCATION ........... */
+.education > .grid > {
+	.school {
+		background-image: url("../../img/grid_bg_img/education/school_mobile.jpg") ;
+	}
+	.t-c {
+		background-image: url("../../img/grid_bg_img/education/t-c_mobile.jpg") ;
+	}
+}
+
+/*........... SPECIFICS FOR EMPLOYMENT ........... */
+.employment > .grid > .work {
+	background-image: url("../../img/grid_bg_img/employment/work_mobile.jpg") ;
+}
+
+/*........... SPECIFICS FOR EXPERIENCE ........... */
+.experience > .grid {
+	.language {
+		background-image: url("../../img/grid_bg_img/experience/language_mobile.jpg") ;
+	}
+	.travel {
+		background-image: url("../../img/grid_bg_img/experience/map_mobile.jpg") ;
+	}
+	.intern {
+		background-image: url("../../img/grid_bg_img/experience/internship_mobile.jpg") ;
+	}
+}
+
+/*........... SPECIFICS FOR COMPUTOR ........... */
+.computor > .grid {
+	.adobe {
+		background-image: url("../../img/grid_bg_img/computer/adobe_mobile.jpg") ;	
+	}
+	.code {
+		background-image: url("../../img/grid_bg_img/computer/code_mobile.jpg") ;
+	}
+	.cad {
+		background-image: url("../../img/grid_bg_img/computer/cad_mobile.jpg") ;
+	}
+	.grid__bg {
+		position: relative;
+		&:hover h3 {
+			display: unset;
+		}
+	}	
+	h2, h3 {
+		position: absolute;
+	}
+	h3 {
+		display: none;
+		bottom: 5px;
+		margin: 0;
+	}
+	img {
+		max-width: 70px;
+	}
+}
+
+/*::::::::::: FOOTER ::::::::::: */
+footer {
+	display: flex;
+	position: fixed;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+
+	.social-media-icons {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		&:hover, &:focus, &:active {
+			opacity: .3;
+		}
+		
+	}
+}
+
+
+
+

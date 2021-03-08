@@ -1,0 +1,43 @@
+
+@media screen and (min-width: 414px) {
+  
+  /*........... SPECIFICS FOR EDUCATION ........... */
+  .education > .grid > {
+    .school {
+      background-image: url("../../img/grid_bg_img/education/school_min414.jpg") ;
+    }
+    .t-c {
+      background-image: url("../../img/grid_bg_img/education/t-c_min414.jpg") ;
+    }
+  }
+  /*........... SPECIFICS FOR EMPLOYMENT ........... */
+  .employment > .grid > .work {
+    background-image: url("../../img/grid_bg_img/employment/work_min414.jpg") ;
+  }
+/*........... SPECIFICS FOR EXPERIENCE ........... */
+  .experience > .grid {
+    .language {
+      background-image: url("../../img/grid_bg_img/experience/language_min414.jpg") ;
+    }
+    .travel {
+      background-image: url("../../img/grid_bg_img/experience/map_min414.jpg") ;
+    }
+    .intern {
+      background-image: url("../../img/grid_bg_img/experience/internship_min414.jpg") ;
+    }
+  }
+
+  /*........... SPECIFICS FOR COMPUTOR ........... */
+
+  .computor > .grid {
+    .adobe {
+      background-image: url("../../img/grid_bg_img/computer/adobe_min414.jpg") ;	
+    }
+    .code {
+      background-image: url("../../img/grid_bg_img/computer/code_min414.jpg") ;
+    }
+    .cad {
+      background-image: url("../../img/grid_bg_img/computer/cad_min414.jpg") ;
+    }
+  }
+}

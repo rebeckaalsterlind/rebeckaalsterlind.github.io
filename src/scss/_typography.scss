@@ -1,0 +1,113 @@
+body {
+	font-family: 'Barlow', sans-serif;
+}
+
+
+/*::::::::::: HEADER/MENU :::::::::::*/
+header {
+  .fa-bars {
+    font-size: 2.5em;
+  }
+}
+
+.menu__content__list__link {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600
+}
+
+
+
+
+/* ::::::::::: FLEXBOX STRUCTURE ::::::::::: */
+
+.flexbox__flexitem {
+  h1, p {
+    text-align: right;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+} 
+.flexbox > .about > p {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*::::::::::: GRID STRUCTURE :::::::::::*/
+.grid__bg {
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 900;
+  }
+  div {
+    h3 {
+      text-align: right;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    p {
+      font-weight: 600;
+    }
+  }	
+}
+
+
+
+/* ::::::::::: SPECIFICS FOR SECTIONS ::::::::::: */
+.bold {
+  font-weight: bold;
+}
+
+/*........... SPECIFICS FOR COMPUTOR ........... */
+
+.computor > .grid > .grid__bg {
+  i {
+    font-size: 2.8em;
+  }
+  h3 {
+    text-transform: unset;
+    text-align: center;
+  }
+}
+
+
+/*::::::::::: FOOTER ::::::::::: */
+.social-media-icons {
+  font-size: 1.1em;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+/*::::::::::: MIN-WIDTH:768PX ::::::::::: */
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .menu{
+    text-align: justify;
+  }
+  .menu__content__list__link{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+  .flexbox > .about > p {
+    font-size: 1.5em;
+  }
+  .social-media-icons {
+    font-size: 1.3em;
+  }
+}
+  
+@media screen and (min-width: 1510px) {
+  .menu__content__list__link{
+    font-size: 1.5em;
+  }
+}

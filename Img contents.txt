@@ -1,0 +1,5 @@
+
+
+img: --> all images and icons except favicon
+ --> grid_bg_img: - background images for grid_bg_img
+ --> profile_img: - profile photos both index.hml and about.hml

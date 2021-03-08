@@ -1,0 +1,124 @@
+$primary-color: #060b23;
+$primary-color-opacity: rgba(6, 11, 35, .9);
+$red: #d24d57;
+$pink: #D47860;
+$brown: #8d6708;
+$blue: #336E7B;
+$turquiose: #049372;
+$yellow: #989b1b;
+
+body {
+  background: $primary-color;
+  color: white;
+}
+.fas {
+  color: white;
+}
+
+
+
+/*:::::::::::INDEX PAGE:::::::::::*/
+.index > section > .right-container {
+  border-color: $yellow; 
+}
+
+
+
+/*:::::::::::HEADER/MENU:::::::::::*/
+header {
+  background: $primary-color-opacity;
+}
+.menu__btn {
+  background-color: transparent;
+  &:hover, &:focus {
+    outline: $primary-color-opacity;
+  }
+}
+.menu__content {
+	background-color: $primary-color-opacity;
+}
+.menu__content__list:active {
+  color: white;
+}
+
+
+
+/*:::::::::::GRID:::::::::::*/
+.grid > .grid__bg {
+  h2, div {
+    color: $primary-color;
+  }
+  div {
+    background: rgba(255, 255, 255, .5);
+  }
+}
+
+
+
+/*:::::::::::INDIVIDUAL SECTION/LINK COLOURS:::::::::::*/
+/*........... ABOUT ...........*/
+.flexbox > .about {
+  color: $red;
+  border-color: $red;
+  P {
+    color: white;
+  }
+}
+.about-link {
+  color: $red;
+}
+
+/*........... EDUCATION ...........*/
+.flexbox > .education {
+  color: $pink;
+  border-color: $pink;
+}
+.education-link {
+  color: $pink;
+}
+
+/*........... EMPLOYMENT........... */
+.flexbox > .employment {
+  color: $brown;
+  border-color: $brown;
+}
+.employment-link {
+  color: $brown;
+}
+
+/*........... EXPERIENCE........... */
+.flexbox > .experience {
+  color: $blue;
+  border-color: $blue;
+}
+.experience-link {
+  color: $blue;
+}
+
+
+/*........... COMPUTOR ...........*/
+.flexbox > .computor {
+  color: $turquiose;
+  border-color: $turquiose;
+}
+.computor-link {
+  color: $turquiose;
+}
+.computor > .grid > .grid__bg > h3 {
+  color: white;
+}
+.code {
+  color: white;
+}
+
+
+
+
+/*:::::::::::FOOTER:::::::::::*/
+footer {
+  background: $primary-color;
+}
+.fa {
+  color: white;
+}
+ 
