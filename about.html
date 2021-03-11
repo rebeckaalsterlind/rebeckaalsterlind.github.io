@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Rebecka Alsterlind Resume Welcome</title>
+		<title>Rebecka Alsterlind Resume</title>
 		<meta name="description" content="Rebecka Alsterlind Front End Developer online resume.">
 		<meta name="keywords" content="Frontend, Web Developer, Resume, Portfolio, HTML, CSS, JavaScript">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +27,8 @@
 				<img class="mobile-only__img" src="img/logo_rebecka_alsterlind_front_end.svg" alt="Logo Rebecka Alsterlind, Front End"/>
 			</a>
 			<nav class="menu">
-				<button onclick="myFunction()" class="menu__btn">
-					<i class="fas fa-bars"></i>
+				<button id="hbBtn" class="menu__btn">
+					<i id="faBtn" class="fas fa-bars"></i>
 				</button>
 				<ul id="myDropdown" class="menu__content">
 					<li class="menu__content__list">
@@ -511,29 +511,28 @@
 				&nbsp;rebecka.alsterlind@gmail.com
 			</a>
 		</footer>
-		
 		<script>
-			
 			/* When the user clicks on the button, 
-			toggle between hiding and showing the menu content */
-			function myFunction() {
+			toggle between hiding and showing the dropdown content */
+			document.getElementById("hbBtn").addEventListener("click", function(){
+				console.log("ok");
 				document.getElementById("myDropdown").classList.toggle("show");
-			};
-			// Close the menu if the user clicks outside of it
+			});
+
+			// Close the dropdown if the user clicks outside of it
 			window.onclick = function (event) {
 				if (!event.target.matches('.menu__btn')) {
-					let dropdowns = document.getElementsByClassName("menu__content");
-					var i;
-					for (i = 0; i < dropdowns.length; i++) {
-						var openDropdown = dropdowns[i];
-						if (openDropdown.classList.contains('show')) {
-							openDropdown.classList.remove('show');
-						}
-					}
-				}
-			}
+					const dropdowns = document.getElementsByClassName("menu__content");
+					console.log(dropdowns);
+					for (let dropdown of dropdowns) {
+						if (dropdown.classList.contains('show')) {
+							dropdown.classList.remove('show');
+						};
+					};
+				};
+			};
 		</script>
-
+		
 	</body>
 
 </html>

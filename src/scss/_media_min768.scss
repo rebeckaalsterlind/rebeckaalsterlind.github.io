@@ -15,7 +15,7 @@
 				display: none;
 			}
 			.menu__content {
-				display: unset;
+				display: show;
 				display: flex;
 				flex-flow: row nowrap;
 				overflow: hidden;
@@ -25,7 +25,7 @@
 				padding: 0;
 			}
 				.menu__content__list{
-					display: inline-block;
+					display: inline;
 					flex: 100%;
 					margin: 0;
 					padding: 0;
@@ -44,7 +44,7 @@
 				}
 			}
 		.desktop-only {
-			display: unset;
+			display: inline-block;
 			flex-basis: 15%;
 			.desktop-only__frame {
 				margin: 10%;
