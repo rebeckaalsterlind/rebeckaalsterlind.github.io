@@ -1,5 +1,5 @@
 body {
-	font-family: 'Barlow', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 
@@ -14,7 +14,7 @@ header {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 600
 }
 
@@ -34,8 +34,8 @@ header {
 } 
 .flexbox > .about > p {
 	font-weight: 400;
-	font-size: 1em;
-	line-height: 1.4;
+	font-size: 1.2em !important;
+  line-height: 1.4;
 }
 
 /*::::::::::: GRID STRUCTURE :::::::::::*/

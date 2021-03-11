@@ -41,8 +41,8 @@ header {
       position: absolute;
       top: 0;
       right: 0;
-	height: 100%;
-	max-width: 70vw;
+	  height: 100%;
+	  max-width: 70vw;
       padding: 5px;
     }
 	}
@@ -57,13 +57,12 @@ header {
 			padding: 16px;
 			border: none;
 			&:hover, &:focus {
-				font-size: 1.2em;
+				font-size: 2.7em;
 			}
 			&:active {
 				opacity: .3;
 			}
 		}
-		
 	}
 	.desktop-only {
 		display: none;
@@ -72,7 +71,6 @@ header {
 		}
 	}
 }
-
 .menu__content {
 	display: none;
 	position: absolute;
@@ -86,7 +84,7 @@ header {
 
 .menu__content__list__link {
 	display: block;
-	margin: 10% 0;
+	margin: 15% 0;
 	padding: 20px 0;
 	&:hover, &:focus {
 		font-weight: 800;

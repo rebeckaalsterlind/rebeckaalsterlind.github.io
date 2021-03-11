@@ -16,7 +16,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="src/css/style.css">
 	</head>	
 
@@ -26,10 +27,8 @@
 			<a class="mobile-only" href="index.html">
 				<img class="mobile-only__img" src="img/logo_rebecka_alsterlind_front_end.svg" alt="Logo Rebecka Alsterlind, Front End"/>
 			</a>
-			<nav class="menu">
-				<button id="hbBtn" class="menu__btn">
-					<i id="faBtn" class="fas fa-bars"></i>
-				</button>
+			<nav id="nav" class="menu">
+				<button  id="hbBtn" class="menu__btn fas fa-bars"></button>
 				<ul id="myDropdown" class="menu__content">
 					<li class="menu__content__list">
 						<a class="menu__content__list__link about-link" href="#about">about me</a>
@@ -63,8 +62,8 @@
 				<h1>About me</h1>
 				<p>
 					I am a Front End Developer student who is passionate about problem solving, creative solutions and visual aesthetics.
-					I have a degree in product design with a foundation in graphic design and have a good eye for details.<br />
-					In addition to this, I love coffee, improvements, building things, summer houses, sewing and exercising.<br />
+					With a degree in product design and a foundation in graphic design I have a good eye for details.<br />
+					In addition to this, I love coffee, improvements, building things, summer houses, sewing and rain.<br />
 					I am social, competitive and creative person who believes in cooperation, communication and humility to achieve results.<br />
 					I prefer a busy and packed schedule to peace and quiet and love when there is a lot going on at once.
 				</p>
@@ -84,8 +83,7 @@
 									400yh<br />
 									Medieinstitutet<br />
 									December 2020 -<br />
-									September 2022<br />
-									Online
+									September 2022
 								</p>
 							</div>
 						</article>
@@ -363,6 +361,7 @@
 							</p>
 						</div>
 					</article>
+					<article class="grid__bg language"></article>
 					<article class="grid__bg travel">
 						<h2>Travels</h2>
 					</article>
@@ -493,11 +492,10 @@
 
 		<!--************* FOOTER *************-->
 		<footer>
-			<a class="social-media-icons contact" href="tel:+46766107373">
+			<a class="social-media-icons contact" href="tel:+46766107374">
 				0766 10 73 74 &nbsp;<i class="fa fa-phone"></i>
 			</a>
-
-			<a class="social-media-icons" href="https://www.linkedin.com/in/rebecka-alsterlind/" target="_blank">
+			<a class="social-media-icons" href="https://www.linkedin.com/in/rebecka-alsterlind-0b449512a/" target="_blank">
 				<i class="fa fa-linkedin" aria-hidden="true"></i>
 			</a>
 			<a class="social-media-icons" href="https://www.facebook.com/rebecka.alsterlind/" target="_blank">
@@ -512,18 +510,18 @@
 			</a>
 		</footer>
 		<script>
-			/* When the user clicks on the button, 
-			toggle between hiding and showing the dropdown content */
+			//Toggle between hiding and showing the dropdown content
 			document.getElementById("hbBtn").addEventListener("click", function(){
-				console.log("ok");
 				document.getElementById("myDropdown").classList.toggle("show");
 			});
 
-			// Close the dropdown if the user clicks outside of it
+		
+
+
+			// Close the dropdown on click outside
 			window.onclick = function (event) {
 				if (!event.target.matches('.menu__btn')) {
 					const dropdowns = document.getElementsByClassName("menu__content");
-					console.log(dropdowns);
 					for (let dropdown of dropdowns) {
 						if (dropdown.classList.contains('show')) {
 							dropdown.classList.remove('show');
