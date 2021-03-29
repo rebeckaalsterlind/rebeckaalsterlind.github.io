@@ -24,27 +24,27 @@ header {
 	box-shadow: 0 7px 10px black;
 	z-index: 20;
 	.mobile-only {
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 80px;
-    width: 200px;
-    z-index: 2;
-    &:hover, &:focus {
-      height: 81px;
-    }	
-    &:active {
-     opacity: .3;
-    }
-    .mobile-only__img {
-      position: absolute;
-      top: 0;
-      right: 0;
-	  height: 100%;
-	  max-width: 70vw;
-      padding: 5px;
-    }
+		display: inline-block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 80px;
+		width: 200px;
+		z-index: 2;
+		&:hover, &:focus {
+			height: 81px;
+		}	
+		&:active {
+			opacity: .3;
+		}
+		.mobile-only__img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			max-width: 70vw;
+			padding: 5px;
+		}
 	}
 	.menu {
     	display: inline-block;
@@ -103,11 +103,11 @@ header {
 	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
-  margin-top: 10%;
+    margin-top: 10%;
 	.flexbox__flexitem {
 		position: relative;
 		text-align: right;
-	  width: 80vw;
+	    width: 80vw;
 		margin: 40% 0;
 		border: 1px solid black;
 		border-right: none;
@@ -120,7 +120,7 @@ header {
 		}
 		p {
 			max-width: 800px;
-			margin: 20px 20px 30px 15%;
+			margin: 20px 20px 30px auto;
 			padding-left: 5%;
 		}
 	} 

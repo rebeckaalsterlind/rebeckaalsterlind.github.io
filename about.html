@@ -509,28 +509,7 @@
 				&nbsp;rebecka.alsterlind@gmail.com
 			</a>
 		</footer>
-		<script>
-			//Toggle between hiding and showing the dropdown content
-			document.getElementById("hbBtn").addEventListener("click", function(){
-				document.getElementById("myDropdown").classList.toggle("show");
-			});
-
-		
-
-
-			// Close the dropdown on click outside
-			window.onclick = function (event) {
-				if (!event.target.matches('.menu__btn')) {
-					const dropdowns = document.getElementsByClassName("menu__content");
-					for (let dropdown of dropdowns) {
-						if (dropdown.classList.contains('show')) {
-							dropdown.classList.remove('show');
-						};
-					};
-				};
-			};
-		</script>
-		
+		<script src="js/main.js"></script>
 	</body>
 
 </html>
