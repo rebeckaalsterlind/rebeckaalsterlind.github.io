@@ -1,5 +1,5 @@
 	//Toggle between hiding and showing the dropdown content
-    document.getElementById("hbBtn").addEventListener("click", function(){
+    document.getElementById("hbBtn").addEventListener("click", () => {
         document.getElementById("myDropdown").classList.toggle("show");
     });
 

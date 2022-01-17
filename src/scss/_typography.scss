@@ -20,7 +20,6 @@ header {
 
 
 
-
 /* ::::::::::: FLEXBOX STRUCTURE ::::::::::: */
 
 .flexbox__flexitem {
@@ -34,9 +33,11 @@ header {
 } 
 .flexbox > .about > p {
 	font-weight: 400;
-	font-size: 1.2em;
+	font-size: .9em;
   line-height: 1.4;
 }
+
+
 
 /*::::::::::: GRID STRUCTURE :::::::::::*/
 .grid__bg {
@@ -53,7 +54,8 @@ header {
       font-weight: 700;
     }
     p {
-      font-weight: 600;
+      font-weight: 400;
+      font-size: .8em;;
     }
   }	
 }
@@ -80,7 +82,7 @@ header {
 
 /*::::::::::: FOOTER ::::::::::: */
 .social-media-icons {
-  font-size: 1.1em;
+  font-size: .7em;
   text-align: center;
   color: white;
 }
@@ -97,12 +99,6 @@ header {
     text-align: center;
     font-size: 1.3em;
     font-weight: 500;
-  }
-  .flexbox > .about > p {
-    font-size: 1.1em;
-  }
-  .social-media-icons {
-    font-size: 1.3em;
   }
 }
   

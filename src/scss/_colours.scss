@@ -1,5 +1,6 @@
 $primary-color: #060b23;
 $primary-color-opacity: rgba(6, 11, 35, .9);
+$primary-color-dark: #05081b;
 $red: #d24d57;
 $pink: #D47860;
 $brown: #8d6708;
@@ -16,9 +17,8 @@ body {
 }
 
 
-
 /*:::::::::::INDEX PAGE:::::::::::*/
-.index > section > .right-container {
+.container__border {
   border-color: $yellow; 
 }
 
@@ -116,7 +116,7 @@ header {
 
 /*:::::::::::FOOTER:::::::::::*/
 footer {
-  background: $primary-color;
+  background: $primary-color-opacity;
 }
 .fa {
   color: white;

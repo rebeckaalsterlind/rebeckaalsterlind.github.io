@@ -38,9 +38,8 @@
 					justify-content: space-evenly;				
 					padding: 0;
 					margin: 0;
-					
+					font-size: .9em;
 					&:hover, &:focus {
-						opacity: .3;
 						font-weight: 600;
 					}
 				}
@@ -51,14 +50,15 @@
 			.desktop-only__frame {
 				margin: 10%;
 				img {
-					height:auto;
-					width:100%;
+					height: auto;
+					width: 100%;
 					border-radius: 50%;
 					filter: gray;
 					-webkit-filter: grayscale(100%);
 					-moz-filter: grayscale(100%);
 					-ms-filter: grayscale(100%);
 					-o-filter: grayscale(100%);
+					transition: 1s;
 					&:hover, &:focus {
 						filter: none;
 					}
